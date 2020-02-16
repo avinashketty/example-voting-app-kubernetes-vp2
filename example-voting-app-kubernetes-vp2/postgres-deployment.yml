@@ -12,8 +12,10 @@ spec:
       app: demo-voting-app
   template:
     metadata:
-      name: postgre-deployment
-      app: demo-voting-app
+      name: postgres-pod
+      labels:
+        name: postgres-pod
+        app: demo-voting-app
     spec:
       containers:
         - name: postgres
